@@ -1,0 +1,35 @@
+{
+    "name": "fivepercent/model-normalizer",
+    "description": "Normalize object to arrays",
+    "keywords": [ "normalizer", "normalizer models", "normalize objects" ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaliy Zhuk",
+            "email": "zhuk2205@gmail.com"
+        },
+
+        {
+            "name": "Dmitry Krasun",
+            "email": "krasun.net@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4",
+        "fivepercent/exception": "~1.0",
+        "fivepercent/reflection": "~1.0"
+    },
+
+    "suggest": {
+        "doctrine/annotations": "For use annotations in normalization",
+        "fivepercent/cache": "For use cached metadata",
+        "fivepercent/money": "For money normalizer and denormalize",
+        "symfony/expression-language": "For get normalized data with used Symfony ExpressionLanguage"
+    },
+
+    "autoload": {
+        "psr-4": { "FivePercent\\Component\\ModelNormalizer\\": "src/" }
+    }
+}
